@@ -16,69 +16,205 @@
 
 <body>
     <div>
-        <nav class="navbar navbar-expand-lg fixed-top navbar-light custom-nav">
-            <a class="navbar-brand" href="#" style="color:white ;font-weight:bold;font-size:8vh">FINWINS</a>
-            <button style="color:white" class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-              <span class="navbar-toggler-icon" style="color:white"></span>
+        <!-- navbar -->
+        <nav class="navbar navbar-expand-lg fixed-top navbar-light bg-black custom-nav">
+            <a class="navbar-brand" href="/" style="color:white ;font-weight:bold;font-size:8vh">FINWINS</a>
+            <button style="color:white" class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon" style="color:white"></span>
             </button>
-          
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-              
-              <div class="my-2 my-lg-0 ml-auto">
-                <ul class="navbar-nav ml-auto">
 
-                    <li class="nav-item dropdown" style="margin:0 1rem">
-                      <a style="color:white;font-weight: bold;font-size: 3vh" class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                        Solutions
-                      </a>
-                      <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                        <a class="dropdown-item" href="#">Digital Lending Solutions</a>
-                            <a class="dropdown-item" href="#">Appointment</a>
-                            <a class="dropdown-item" href="#">Processing</a>
-                            <a class="dropdown-item" href="#">Services</a>
-                      </div>
-                    </li>
-                    <li class="nav-item dropdown" style="margin:0 1rem">
-                        <a style="color:white;font-weight: bold;font-size: 3vh" class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                          Services
-                        </a>
-                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                            <a class="dropdown-item" href="#">IT Services</a>
-                            <a class="dropdown-item" href="#">IT Solution</a>
-                        </div>
-                      </li>
-                      <li class="nav-item dropdown" style="margin:0 1rem">
-                        <a style="color:white;font-weight: bold;font-size: 3vh" class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                          About
-                        </a>
-                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                            <a class="dropdown-item" href="#">option1</a>
-                            <a class="dropdown-item" href="#">option2</a>
-                            <a class="dropdown-item" href="#">option3</a>
-                            <a class="dropdown-item" href="#">option4</a>
-                        </div>
-                      </li>
-                  </ul>
-              </div>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+
+                <div class="my-2 my-lg-0 ml-auto">
+                    <ul class="navbar-nav ml-auto">
+
+                        <li class="nav-item dropdown" style="margin:0 1rem">
+                            <a style="color:white;font-weight: bold;font-size: 3vh" class="nav-link dropdown-toggle"
+                                href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true"
+                                aria-expanded="false">
+                                Solutions
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <a class="dropdown-item" href="/digitalsolution">Digital Lending Solutions</a>
+                                <a class="dropdown-item" href="#">Appointment</a>
+                                <a class="dropdown-item" href="#">Processing</a>
+                                <a class="dropdown-item" href="#">Services</a>
+                            </div>
+                        </li>
+                        <li class="nav-item dropdown" style="margin:0 1rem">
+                            <a style="color:white;font-weight: bold;font-size: 3vh" class="nav-link dropdown-toggle"
+                                href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true"
+                                aria-expanded="false">
+                                Services
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <a class="dropdown-item" href="#">IT Services</a>
+                                <a class="dropdown-item" href="#">IT Solution</a>
+                            </div>
+                        </li>
+                        <li class="nav-item dropdown" style="margin:0 1rem">
+                            <a style="color:white;font-weight: bold;font-size: 3vh" class="nav-link dropdown-toggle"
+                                href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true"
+                                aria-expanded="false">
+                                About
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <a class="dropdown-item" href="#">option1</a>
+                                <a class="dropdown-item" href="#">option2</a>
+                                <a class="dropdown-item" href="#">option3</a>
+                                <a class="dropdown-item" href="#">option4</a>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
             </div>
-          </nav>
+        </nav>
         {% block content %}
 
         {% endblock content %}
+        <!-- Footer -->
+        <footer class="page-footer font-small blue pt-4">
+
+            <!-- Footer Links -->
+            <div class="container-fluid  text-md-left" style="background-color:rgb(0, 71, 212)">
+
+                <!-- Grid row -->
+                <div class="row" style="padding:7vh">
+
+                    <!-- Grid column -->
+                    <div class="col-lg-3">
+
+                        <!-- Content -->
+                        <h4 style="font-weight:bolder; color:white">Company</h4>
+
+                        <ul class="list-unstyled">
+                            <li>
+                                <a href="#!" style="color:white">Managed IT</a>
+                            </li>
+                            <li>
+                                <a href="#!" style="color:white">IT Support</a>
+                            </li>
+                            <li>
+                                <a href="#!" style="color:white">IT Consultancy</a>
+                            </li>
+                            <li>
+                                <a href="#!" style="color:white">Cloud Computing</a>
+                            </li>
+                            <li>
+                                <a href="#!" style="color:white">Cyber Security</a>
+                            </li>
+                        </ul>
+
+                    </div>
+
+                    <!-- Grid column -->
+                    <div class="col-lg-3">
+
+                        <!-- Links -->
+                        <h4 style="font-weight:bolder; color:white">Solutions</h4>
+
+                        <ul class="list-unstyled">
+                            <li>
+                                <a href="/digitalsolution" style="color:white">Digital Lending Solutions</a>
+                            </li>
+                            <li>
+                                <a href="#!" style="color:white">Video KYC</a>
+                            </li>
+                            <li>
+                                <a href="#!" style="color:white">Integration and Marketing Automation</a>
+                            </li>
+                            <li>
+                                <a href="#!" style="color:white">Lead Management</a>
+                            </li>
+                            <li>
+                                <a href="#!" style="color:white">eKYC</a>
+                            </li>
+                            <li>
+                                <a href="#!" style="color:white">Safety @ work</a>
+                            </li>
+                            <li>
+                                <a href="#!" style="color:white">Employee Management</a>
+                            </li>
+                            <li>
+                                <a href="#!" style="color:white">Khata Management</a>
+                            </li>
+                        </ul>
+
+                    </div>
+                    <!-- Grid column -->
+
+                    <!-- Grid column -->
+                    <div class="col-lg-3">
+
+                        <!-- Links -->
+                        <h4 style="font-weight:bolder; color:white">Industry</h4>
+
+                        <ul class="list-unstyled">
+                            <li>
+                                <a href="#!" style="color:white">Forum Support</a>
+                            </li>
+                            <li>
+                                <a href="#!" style="color:white">Contact Us</a>
+                            </li>
+                            <li>
+                                <a href="#!" style="color:white">Pricing and plans</a>
+                            </li>
+                        </ul>
+
+                    </div>
+                    <div class="col-lg-3">
+
+                        <!-- Links -->
+                        <h4 style="font-weight:bolder; color:white">Industry</h4>
+
+
+                        <button type="button" style="border-radius:50%;margin:.2rem;padding:.8rem 1.2rem" class="btn btn-light"
+                            data-toggle="tooltip" data-placement="top" title="twitter">
+                            <i class="fa fa-twitter"></i>
+                        </button>
+                        <button type="button" style="border-radius:50%;margin:.2rem;padding:.8rem 1.2rem" class="btn btn-light"
+                            data-toggle="tooltip" data-placement="top" title="facebook">
+                            <i class="fa fa-facebook"></i>
+                        </button>
+                        <button type="button" style="border-radius:50%;margin:.2rem;padding:.8rem 1.2rem" class="btn btn-light"
+                            data-toggle="tooltip" data-placement="top" title="Linked In">
+                            <i class="fa fa-linkedin"></i>
+                        </button>
+                    </div>
+                    <!-- Grid column -->
+
+                </div>
+                <!-- Grid row -->
+
+            </div>
+            <!-- Footer Links -->
+
+            <!-- Copyright -->
+            <div class="footer-copyright" style="padding: 0 0 2rem 2rem;color:rgb(105, 105, 105)">
+                © 2020 Mitech. All Rights Reserved.
+            </div>
+            <!-- Copyright -->
+
+        </footer>
+
+
     </div>
+    <!-- <a id="back-to-top" href="#" class="btn btn-light btn-lg back-to-top" role="button"><i class="fa fa-arrow-up"></i></a> -->
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
         crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
         crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
         crossorigin="anonymous"></script>
-        <script>
-     if ( document.documentElement.scrollTop >= 200 ){
-         let navbar=document.getElementsByClassName("custom-nav");
-         console.log("working")
-         navbar.style.backgroundColor="black"
-     }
-        </script>
+    <script>
+        if (document.documentElement.scrollTop >= 200) {
+            let navbar = document.getElementsByClassName("custom-nav");
+            console.log("working")
+            navbar.style.backgroundColor = "black"
+        }
+    </script>
+    <script src="/static/index.js"></script>
 </body>
 
 </html>

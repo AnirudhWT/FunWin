@@ -18,3 +18,24 @@ background-color: blue;
     background-color: #000 !important;
     transition: background-color 200ms linear;
   }
+  /* body {
+    background-color: #3498db;
+    color: #ecf0f1;
+  }
+  
+  .back-to-top {
+      position: fixed;
+      bottom: 25px;
+      right: 25px;
+      display: none;
+  } */
+  .platform-images{
+    width: 75%;
+    height: 75%;
+  }
+ 
+  .solution-box{
+    box-shadow: 0 1rem 3rem rgba(0,0,0,.175)!important;
+    border:none;
+  }
+ 
