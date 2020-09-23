@@ -11,3 +11,10 @@
   i.fa:hover i.fa{
 background-color: blue;
   } */
+  .carousel-inner .item{
+    height: 100vh;
+  }
+  .navbar-fixed-top.scrolled {
+    background-color: #000 !important;
+    transition: background-color 200ms linear;
+  }

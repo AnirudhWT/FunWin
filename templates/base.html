@@ -16,63 +16,52 @@
 
 <body>
     <div>
-
-        <nav class="navbar navbar-expand-lg fixed-top navbar-light bg-none px-4 py-0" style="z-index:9999;">
-
-            <div class="col-lg-8">
-                <a class="navbar-brand mx-auto" href="#" style="color:white ;font-weight:bold;font-size:8vh">FINWINS</a>
-            </div>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation" style="color:white">
-                <span class="navbar-toggler-icon" style="color:white"></span>
+        <nav class="navbar navbar-expand-lg fixed-top navbar-light custom-nav">
+            <a class="navbar-brand" href="#" style="color:white ;font-weight:bold;font-size:8vh">FINWINS</a>
+            <button style="color:white" class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon" style="color:white"></span>
             </button>
+          
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              
+              <div class="my-2 my-lg-0 ml-auto">
+                <ul class="navbar-nav ml-auto">
 
-            <div class="collapse navbar-collapse col-lg-6" id="navbarSupportedContent">
-                <ul class="navbar-nav mr-auto ">
-
-                    <li class="nav-item dropdown mx-2">
-                        <div class="solutions">
-                            <a style="color:white;font-weight: bold;font-size: 3vh" class="nav-link dropdown-toggle"
-                                href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true"
-                                aria-expanded="false">
-                                Solutions
-                            </a></div>
-                        <div class="dropdown-menu solutions-menu" aria-labelledby="navbarDropdown">
-                            <a class="dropdown-item" href="#">Digital Lending Solutions</a>
+                    <li class="nav-item dropdown" style="margin:0 1rem">
+                      <a style="color:white;font-weight: bold;font-size: 3vh" class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Solutions
+                      </a>
+                      <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="#">Digital Lending Solutions</a>
                             <a class="dropdown-item" href="#">Appointment</a>
                             <a class="dropdown-item" href="#">Processing</a>
                             <a class="dropdown-item" href="#">Services</a>
-                        </div>
+                      </div>
                     </li>
-                    <li class="nav-item dropdown mx-2">
-                        <a style="color:white;font-weight: bold;font-size: 3vh" class="nav-link dropdown-toggle services"
-                            href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true"
-                            aria-expanded="false">
-                            Services
+                    <li class="nav-item dropdown" style="margin:0 1rem">
+                        <a style="color:white;font-weight: bold;font-size: 3vh" class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                          Services
                         </a>
-                        <div class="dropdown-menu services-menu" aria-labelledby="navbarDropdown">
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
                             <a class="dropdown-item" href="#">IT Services</a>
                             <a class="dropdown-item" href="#">IT Solution</a>
                         </div>
-                    </li>
-                    <li class="nav-item dropdown mx-2">
-                        <a style="color:white;font-weight: bold;font-size: 3vh" class="nav-link dropdown-toggle about"
-                            href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true"
-                            aria-expanded="false">
-                            About
+                      </li>
+                      <li class="nav-item dropdown" style="margin:0 1rem">
+                        <a style="color:white;font-weight: bold;font-size: 3vh" class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                          About
                         </a>
-                        <div class="dropdown-menu about-menu" aria-labelledby="navbarDropdown">
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
                             <a class="dropdown-item" href="#">option1</a>
                             <a class="dropdown-item" href="#">option2</a>
                             <a class="dropdown-item" href="#">option3</a>
                             <a class="dropdown-item" href="#">option4</a>
                         </div>
-                    </li>
-
-                </ul>
+                      </li>
+                  </ul>
+              </div>
             </div>
-        </nav>
-
+          </nav>
         {% block content %}
 
         {% endblock content %}
@@ -83,6 +72,13 @@
         crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
         crossorigin="anonymous"></script>
+        <script>
+     if ( document.documentElement.scrollTop >= 200 ){
+         let navbar=document.getElementsByClassName("custom-nav");
+         console.log("working")
+         navbar.style.backgroundColor="black"
+     }
+        </script>
 </body>
 
 </html>
